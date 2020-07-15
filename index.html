@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css" type="text/css"/>
+    <link rel="icon" href="https://img.icons8.com/fluent/48/000000/calculator.png"/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+</head>
+<body>
+
+    <main>
+
+        <h1>Calculator</h1>
+
+        <div class="calculator">
+
+            <div class="disp">
+
+                <h4 id="beforeText">0</h4>
+                <h2 id="currentText">0</h2>
+
+            </div>
+
+            <table>
+
+                <tr>
+
+                    <th><button onclick="operator('del')" class="numbers operators">DEL</button></th>
+                    <th><button onclick="operator('clear')" class="numbers operators">C</button></th>
+                    <th><button onclick="operator('mult')" class="numbers operators">X</button></th>
+                    <th><button onclick="operator('div')" class="numbers operators">/</button></th>
+
+                </tr>
+
+                <tr>
+
+                    <th><button onclick="addNum(7)" class="numbers">7</button></th>
+                    <th><button onclick="addNum(8)" class="numbers">8</button></th>
+                    <th><button onclick="addNum(9)" class="numbers">9</button></th>
+                    <th><button onclick="operator('add')" class="numbers operators">+</button></th>
+
+                </tr>
+
+                <tr>
+
+                    <th><button onclick="addNum(4)" class="numbers">4</button></th>
+                    <th><button onclick="addNum(5)" class="numbers">5</button></th>
+                    <th><button onclick="addNum(6)" class="numbers">6</button></th>
+                    <th><button onclick="operator('minus')" class="numbers operators">-</button></th>
+
+                </tr>
+
+                <tr>
+
+                    <th><button onclick="addNum(1)" class="numbers">1</button></th>
+                    <th><button onclick="addNum(2)" class="numbers">2</button></th>
+                    <th><button onclick="addNum(3)" class="numbers">3</button></th>
+                    <th rowspan="2"><button onclick="operator('equal')" style="border-bottom-right-radius: 10px;" class="numbers operators">=</button></th>
+
+                </tr>
+
+                <tr>
+
+                    <th colspan="2"><button onclick="addNum(0)" style="border-bottom-left-radius: 10px;" class="numbers">0</button></th>
+                    <th><button onclick="addNum('.')" class="numbers">.</button></th>
+
+                </tr>
+
+
+            </table>
+
+        </div>
+
+        <p>Made by Alexander González Covic</p>
+
+    </main>
+
+    <script src="app.js"></script>
+    
+</body>
+</html>
